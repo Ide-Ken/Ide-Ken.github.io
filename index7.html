@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mode-viewerテスト本体単独</title>
+    <!-- Import the component -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"
+    ></script>
+  </head>
+  <body>
+    <model-viewer
+      src="./assets/models/220314_1.0_01_usdzに変換前.glb"
+      ios-src="./assets/models/EF11_mock.usdz"
+      alt="A 3D model"
+      auto-rotate
+      camera-controls
+      disable-zoom
+      shadow-intensity = 1
+      shadow-softness = 0
+      ar
+    ></model-viewer>
+  </body>
+</html>
